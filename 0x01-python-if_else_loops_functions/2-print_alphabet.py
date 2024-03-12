@@ -1,5 +1,4 @@
 #!/usr/bin/python3
 import random
-for i in range(97, 122):
-    print(f"{chr(i)}", end="")
-print(chr(i + 1))
+for i in range(97, 123):
+    print(f"{chr(i)}", end="" if i < 122 else '\n')
