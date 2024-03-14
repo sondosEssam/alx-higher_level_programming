@@ -1,2 +1,2 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 __import__("easy_print")
