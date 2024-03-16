@@ -9,7 +9,7 @@ int *connecting_through_back(listint_t **head)
 	listint_t *curr = *head, *curr2 = *head;
 	int n = 0, i = 1;
 
-	if (*head == NULL)
+	if (*head == NULL || head)
 		return (NULL);
 	while (curr != NULL)
 	{
@@ -44,7 +44,11 @@ int is_palindrome(listint_t **head)
 	for (i = 1; i < n; i++)
 	{
 		if (p[i] != p[n - i])
+		{
+			free(p);
 			return (0);
+		}
 	}
+	free(p);
 	return (1);
 }
