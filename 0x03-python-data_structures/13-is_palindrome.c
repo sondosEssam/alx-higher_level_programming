@@ -32,7 +32,7 @@ int *connecting_through_back(listint_t **head)
 */
 int is_palindrome(listint_t **head)
 {
-	int *p = connecting_through_back(head), *tmp = NULL;
+	int *p = connecting_through_back(head);
 	int n = p[0] + 1, i = 0;
 
 	for (i = 1; i < n; i++)
