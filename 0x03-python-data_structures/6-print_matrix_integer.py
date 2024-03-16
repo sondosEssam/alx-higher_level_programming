@@ -7,4 +7,4 @@ def print_matrix_integer(matrix=[[]]):
         if listi == []:
             print()
         for i in listi:
-            print("{}".format(i),end=" " if i != listi[-1] else "\n")
+            print("{}".format(i), end=" " if i != listi[-1] else "\n")
