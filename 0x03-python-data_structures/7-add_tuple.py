@@ -10,4 +10,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
         list2.append(0)
     if len(list2) == 1:
         list2.append(0)
-    return (list1[0] + list2[0] , list1[1] + list2[1])
+    return (list1[0] + list2[0], list1[1] + list2[1])
