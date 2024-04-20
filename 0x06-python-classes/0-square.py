@@ -2,8 +2,10 @@
 """
 0-square.py omdule
 """
+
+
 class Square:
-    """ spuare class documination
-    
+    """
+    spuare class documination
     """
     pass
