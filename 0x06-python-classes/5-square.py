@@ -36,6 +36,7 @@ class Square:
                 for j in range(0, self.__size):
                     print("#", end="")
                 print()
+
     @property
     def size(self):
         """Getter for the size property.
