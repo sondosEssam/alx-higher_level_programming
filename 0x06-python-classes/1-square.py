@@ -11,9 +11,8 @@ class Square:
     __size: provte size value
     """
     def __init__(self, size):
-        """ __init__ constructor 
+        """ __init__ constructor
         args:
         size: size of the square
         """
         self.__size = size
-
