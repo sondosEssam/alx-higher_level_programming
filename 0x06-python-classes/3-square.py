@@ -16,13 +16,15 @@ class Square:
         size: size of the square
         """
         self.size = size
+
     def area(self):
         """
-        area: area of the square 
+        area: area of the square
         Returns:
         float: area of the square
         """
         return self.__size * self.__size
+
     @property
     def size(self):
         """Getter for the size property.
