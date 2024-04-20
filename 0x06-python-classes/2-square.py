@@ -10,13 +10,14 @@ class Square:
     attributes:
     __size: provte size value
     """
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """ __init__ constructor
         args:
         size: size of the square
         """
         self.size = size
     @property
+
     def size(self):
         """Getter for the size property.
         Returns:
@@ -24,6 +25,7 @@ class Square:
         """
         return self.__size
     @size.setter
+
     def size(self, value):
         """Setter for the size property.
         Args:
@@ -34,4 +36,3 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
