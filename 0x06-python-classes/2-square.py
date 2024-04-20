@@ -16,16 +16,16 @@ class Square:
         size: size of the square
         """
         self.size = size
-    @property
 
+    @property
     def size(self):
         """Getter for the size property.
         Returns:
             int: The current size of the square.
         """
         return self.__size
-    @size.setter
 
+    @size.setter
     def size(self, value):
         """Setter for the size property.
         Args:
