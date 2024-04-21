@@ -70,7 +70,7 @@ class Rectangle:
         """
         __reper__ for the rectalne identifying
         """
-        return f"Rectangle({self.__width},{self.__height})"
+        return f"Rectangle({self.__width}, {self.__height})"
 
     def area(self):
         """
