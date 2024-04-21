@@ -17,7 +17,7 @@ TypeError: b must be an integer
 97
 >>> add_integer(3, 4)
 7
->>> add_integer(1000, 4)
+>>> add_integer(2.3)
 1004
 >>> add_integer(-1000, 4)
 -996
