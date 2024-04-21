@@ -14,11 +14,12 @@ def matrix_divided(matrix, div):
     int
     """
     new_matrix = []
+    row = []
     if not all(type(i) is list for i in matrix) or \
             not matrix or \
             not all(type(j) in (int, float) for i in matrix for j in i):
         raise TypeError("matrix must be a matrix" +
-                        "(list of lists) of integers/floats")
+                        " (list of lists) of integers/floats")
     x = len(matrix[0])
     if any(len(i) != x for i in matrix):
         raise TypeError("Each row of the matrix must have the same size")
@@ -28,7 +29,8 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
     for i in matrix:
         for j in i:
-            new_matrix.append(round(j / div, 2))
+            row.append(round(j / div, 2))
+        new_matrix.append(row)
     return new_matrix
 
 
