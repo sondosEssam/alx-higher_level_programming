@@ -17,6 +17,8 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer(), None)
     def test_max_integer(self, list=[]):
         self.assertEqual(max_integer([1,2,3,4,5]), 5)
+    def test_one_element(self, list=[]):
+        self.assertEqual(max_integer([5]), 5)
     def test_mixed_list(self):
         """Unittest for max_integer([..])"""
         with self.assertRaises(TypeError):
