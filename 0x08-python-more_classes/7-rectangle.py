@@ -66,10 +66,10 @@ class Rectangle:
 
     def __str__(self):
         """ str method to change output when printing the rectangle"""
-        string_representation = ""
+        string_rep = ""
         for _ in range(self.__height):
-            string_representation += str(self.print_symbol) * self.__width + "\n"
-        return string_representation.rstrip()
+            string_rep += str(self.print_symbol) * self.__width + "\n"
+        return string_rep.rstrip()
 
     def __repr__(self):
         """
