@@ -8,14 +8,12 @@ class MyList(list):
     MyList
     """
 
-    def __init__(self):
-        """
-        init
-        """
-        super().__init__
-
     def print_sorted(self):
         """
         print sorted
         """
         print(sorted(self))
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("tests/1-my_list.txt")
