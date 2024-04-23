@@ -3,6 +3,7 @@
 1-mylist module
 """
 
+
 class MyList(list):
     """
     MyList
@@ -13,6 +14,7 @@ class MyList(list):
         print sorted
         """
         print(sorted(self))
+
 
 if __name__ == "__main__":
     import doctest
