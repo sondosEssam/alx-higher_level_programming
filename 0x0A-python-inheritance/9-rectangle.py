@@ -28,4 +28,4 @@ class Rectangle(BaseGeometry):
         """"
         area
         """
-        return self.__height * self.__width
+        return int(self.__height) * int(self.__width)
