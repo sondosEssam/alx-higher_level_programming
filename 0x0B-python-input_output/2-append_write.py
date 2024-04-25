@@ -9,5 +9,5 @@ def append_write(filename="", text=""):
     read file
     """
     with open(filename, mode="a", encoding="UTF8") as f:
-        f.append(text)
+        f.write(text)
     return len(text)
