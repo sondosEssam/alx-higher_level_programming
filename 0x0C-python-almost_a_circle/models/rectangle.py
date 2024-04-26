@@ -26,8 +26,8 @@ class Rectangle(Base):
         """
         str when priting rectangl instance
         """
-        return f"({self.id}) {self.__x}/{self.__y} - \
-            {self.__width}/{self.__height}"
+        return f"({self.id}) {self.__x}/{self.__y} - " + \
+            f"{self.__width}/{self.__height}"
 
     @property
     def height(self):
