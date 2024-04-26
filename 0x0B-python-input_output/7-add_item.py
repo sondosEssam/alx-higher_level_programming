@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-0-read_file v.3
+7-add_item.py
 
 This script reads command-line arguments, appends them to a list in memory,
 and then saves the updated list to a JSON file named "add_item.json".
