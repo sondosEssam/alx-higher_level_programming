@@ -36,4 +36,4 @@ class Student:
         if json is None:
             return
         for i, j in json.items():
-            self.i = j
+            setattr(self, i , j) 
