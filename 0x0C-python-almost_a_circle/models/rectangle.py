@@ -116,3 +116,13 @@ class Rectangle(Base):
         spaces = " " * self.__x
         for _ in range(self.__height):
             print(spaces + "#" * self.__width + "\n", end="")
+
+    def update(self, *args):
+        """
+        update attrivbutes
+        """
+        if len(args) == 0:
+            return
+        argsnames = ["id", "width", "height", "x", "y"]
+        for i in range(len(args)):
+            setattr(self, argsnames[i], args[i])
