@@ -12,7 +12,6 @@ class Rectangle(Base):
     rectangle class
     """
 
-
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         __init__ constructor
@@ -22,7 +21,6 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
-
 
     @property
     def height(self):
