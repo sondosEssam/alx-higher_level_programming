@@ -17,9 +17,17 @@ It assumes the existence of two other Python files:
 """
 
 import sys
+"""
+save json file
+"""
 save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
+"""
+load json file
+"""
 load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
-
+""""
+additional one
+"""
 
 filename = "add_item.json"
 with open(filename, mode="a", encoding="UTF8") as f:
