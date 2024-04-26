@@ -26,7 +26,7 @@ class Rectangle(Base):
         """
         str when priting rectangl instance
         """
-        return f" ({self.id}) {self.__x}/{self.__y} - " + \
+        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - " + \
             f"{self.__width}/{self.__height}"
 
     @property
