@@ -111,5 +111,8 @@ class Rectangle(Base):
         """
         display #
         """
+        for _ in range(self.__y):
+            print()
+        spaces = " " * self.__x
         for _ in range(self.__height):
-            print("#" * self.__width + "\n", end="")
+            print(spaces + "#" * self.__width + "\n", end="")
