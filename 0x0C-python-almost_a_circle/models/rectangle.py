@@ -117,12 +117,15 @@ class Rectangle(Base):
         for _ in range(self.__height):
             print(spaces + "#" * self.__width + "\n", end="")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         update attrivbutes
         """
         if len(args) == 0:
-            return
+            if len(kwargs) == 0:
+                return
+            for attr, value in kwargs.items():
+                setattr(self, attr, value)
         argsnames = ["id", "width", "height", "x", "y"]
         for i in range(len(args)):
             setattr(self, argsnames[i], args[i])
