@@ -56,3 +56,14 @@ class Square(Rectangle):
         argsnames = ["id", "size", "x", "y"]
         for i in range(len(args)):
             setattr(self, argsnames[i], args[i])
+
+    def to_dictionary(self):
+        """
+        dict
+        """
+        dicti = {}
+        dicti["id"] = self.id
+        dicti["size"] = self.size
+        dicti["x"] = self.x
+        dicti["y"] = self.y
+        return dicti
