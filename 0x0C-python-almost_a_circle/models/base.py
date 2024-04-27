@@ -40,8 +40,10 @@ class Base:
         filename = f"{cls.__name__}.json"
         with open(filename, mode="w") as f:
             if list_objs is None:
-                f.write("r2")
+                f.write("[]")
             else:
+                listi = []
                 for obj in list_objs:
                     dicti = cls.to_dictionary(obj)
-                    f.write(cls.to_json_string(dicti))
+                    listi.append(cls.to_json_string(dicti))
+                f.write(", ".join(listi))
