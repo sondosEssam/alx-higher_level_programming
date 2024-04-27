@@ -22,15 +22,15 @@ class Square(Rectangle):
         """
         str when priting square instance
         """
-        return f"[Square] ({self.id}) {self.__x}/{self.__y} - " + \
-            f"{self.__width}"
+        return f"[Square] ({self.id}) {self.x}/{self.y} - " + \
+            f"{self.width}"
 
     @property
     def size(self):
         """
         square size
         """
-        return self.__height
+        return self.height
 
     @size.setter
     def size(self, value):
@@ -41,8 +41,8 @@ class Square(Rectangle):
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
-        self.__height = value
-        self.__width = value
+        self.height = value
+        self.height = value
 
     def update(self, *args, **kwargs):
         """
