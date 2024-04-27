@@ -129,3 +129,9 @@ class Rectangle(Base):
         argsnames = ["id", "width", "height", "x", "y"]
         for i in range(len(args)):
             setattr(self, argsnames[i], args[i])
+
+    def to_dictionary(self):
+        """
+        dict
+        """
+        return self.__dict__
