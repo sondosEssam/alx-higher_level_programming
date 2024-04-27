@@ -134,4 +134,10 @@ class Rectangle(Base):
         """
         dict
         """
-        return self.__dict__
+        dicti = {}
+        dicti["id"] = self.id
+        dicti["width"] = self.__width
+        dicti["height"] = self.__height
+        dicti["x"] = self.__x
+        dicti["y"] = self.__y
+        return dicti
