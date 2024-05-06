@@ -5,20 +5,17 @@ def roman_to_int(roman_string):
         return
     num = 0
     curr = 0
-    prev = 0
-    ch = 0
-    for i in range(len(roman_string) - 1, 0, -1):
+    ch = romans[roman_string[len(roman_string) - 1]]
+
+    i = 0
+    while i < len(roman_string):
         curr = romans[roman_string[i]]
-        prev = romans[roman_string[i - 1]]
-        if ch == 0:
-            num += curr
-            if curr > prev:
-                ch = 1
-                continue
-        if ch == 1:
-            num -= curr
-    if (ch == 0):
-        num += romans[roman_string[0]]
-    else:
-        num -= romans[roman_string[0]]
+        num += curr
+        i += 1
+    i = len(roman_string) - 2
+    while i >= 0:
+        curr = romans[roman_string[i]]
+        if curr < ch:
+            num -= (2 * curr)
+        i -= 1
     return num
