@@ -1,2 +1,2 @@
 # comment
-show databases
+SHOW DATABASES;
