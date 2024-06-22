@@ -2,12 +2,12 @@
 """
 comment
 """
-import MySQLdb
-import sys 
+import MySQLdb as d
+from sys import argv as a
 try:
-    with MySQLdb.Connect(user=sys.argv[1],passwd=sys.argv[2], db=sys.argv[3], port=3306) as db:
+    with d.Connect(user=a[1], passwd=a[2], db=a[3], port=3306) as db:
         with db.cursor() as cursor:
-            query="SELECT * FROM states ORDER BY id ASC;"
+            query = "SELECT * FROM states ORDER BY id ASC;"
             cursor.execute(query)
             rows = cursor.fetchall()
             for row in rows:
