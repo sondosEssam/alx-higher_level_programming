@@ -14,8 +14,8 @@ if __name__ == "__main__":
     )
     Session = sessionmaker(bind=engine)
     session = Session()
-    sataes = session.query(State).filter_by(id=1).all()
+    sataes = session.query(State).first()
     if sataes is not None:
-        print(f"{sataes[0].id}: {sataes[0].name}")
+        print(f"{sataes.id}: {sataes.name}")
     else:
         print("Nothing")
